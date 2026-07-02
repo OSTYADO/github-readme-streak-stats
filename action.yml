@@ -41,7 +41,7 @@ runs:
           env:
               INPUT_OPTIONS: ${{ inputs.options }}
               INPUT_PATH: ${{ inputs.path }}
-              TOKEN: ${{ inputs.token || github.token }}
+              TOKEN: ${{ secrets.TOKEN || github.token }}
 branding:
     icon: activity
     color: orange
